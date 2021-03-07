@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		657FD2A5BA24C748F2652C91 /* libPods-mnist_digit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B115051793D30D95F614D /* libPods-mnist_digit.a */; };
+		9B0178D625C2407300903C7E /* mnist_digitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0178D525C2407300903C7E /* mnist_digitApp.swift */; };
+		9B0178DA25C2407400903C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B0178D925C2407400903C7E /* Assets.xcassets */; };
+		9B0178DD25C2407400903C7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B0178DC25C2407400903C7E /* Preview Assets.xcassets */; };
+		9B0178E825C2EA4E00903C7E /* traced_script_module.pt in Resources */ = {isa = PBXBuildFile; fileRef = 9B0178E625C2EA4E00903C7E /* traced_script_module.pt */; };
+		9B0178E925C2EA4E00903C7E /* torchscript_model_optimized.pt in Resources */ = {isa = PBXBuildFile; fileRef = 9B0178E725C2EA4E00903C7E /* torchscript_model_optimized.pt */; };
+		9B8B033425C2F10500F435DC /* MnistModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B033325C2F10500F435DC /* MnistModule.mm */; };
+		9BCC095E25CD663A005D5877 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCC095D25CD663A005D5877 /* CameraService.swift */; };
+		9BCC096125CD7E22005D5877 /* AppSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCC096025CD7E22005D5877 /* AppSetup.swift */; };
+		9BCC096425CD7F55005D5877 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCC096325CD7F55005D5877 /* LandingPage.swift */; };
+		9BCC096A25D406F4005D5877 /* PredictionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCC096925D406F4005D5877 /* PredictionService.swift */; };
+		9BCC097125D5596C005D5877 /* PredictionResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCC097025D5596C005D5877 /* PredictionResultView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		730452992A7D59C6C80019DD /* Pods-mnist_digit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mnist_digit.release.xcconfig"; path = "Target Support Files/Pods-mnist_digit/Pods-mnist_digit.release.xcconfig"; sourceTree = "<group>"; };
+		9B0178D225C2407300903C7E /* mnist_digit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mnist_digit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B0178D525C2407300903C7E /* mnist_digitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mnist_digitApp.swift; sourceTree = "<group>"; };
+		9B0178D925C2407400903C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B0178DC25C2407400903C7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9B0178DE25C2407400903C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B0178E625C2EA4E00903C7E /* traced_script_module.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = traced_script_module.pt; sourceTree = "<group>"; };
+		9B0178E725C2EA4E00903C7E /* torchscript_model_optimized.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = torchscript_model_optimized.pt; sourceTree = "<group>"; };
+		9B8B032725C2ED3600F435DC /* mnist_digit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mnist_digit-Bridging-Header.h"; sourceTree = "<group>"; };
+		9B8B033225C2F0B900F435DC /* MnistModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MnistModule.h; sourceTree = "<group>"; };
+		9B8B033325C2F10500F435DC /* MnistModule.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MnistModule.mm; sourceTree = "<group>"; };
+		9BCC095D25CD663A005D5877 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		9BCC096025CD7E22005D5877 /* AppSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetup.swift; sourceTree = "<group>"; };
+		9BCC096325CD7F55005D5877 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		9BCC096925D406F4005D5877 /* PredictionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionService.swift; sourceTree = "<group>"; };
+		9BCC097025D5596C005D5877 /* PredictionResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionResultView.swift; sourceTree = "<group>"; };
+		A23F0154DDBC5F1C916AAECF /* Pods-mnist_digit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mnist_digit.debug.xcconfig"; path = "Target Support Files/Pods-mnist_digit/Pods-mnist_digit.debug.xcconfig"; sourceTree = "<group>"; };
+		B48B115051793D30D95F614D /* libPods-mnist_digit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mnist_digit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B0178CF25C2407300903C7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				657FD2A5BA24C748F2652C91 /* libPods-mnist_digit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9335A0313918180702505994 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A23F0154DDBC5F1C916AAECF /* Pods-mnist_digit.debug.xcconfig */,
+				730452992A7D59C6C80019DD /* Pods-mnist_digit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9B0178C925C2407300903C7E = {
+			isa = PBXGroup;
+			children = (
+				9B0178D425C2407300903C7E /* mnist_digit */,
+				9B0178D325C2407300903C7E /* Products */,
+				9335A0313918180702505994 /* Pods */,
+				ADB82410678D3F328C48DE4D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9B0178D325C2407300903C7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B0178D225C2407300903C7E /* mnist_digit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B0178D425C2407300903C7E /* mnist_digit */ = {
+			isa = PBXGroup;
+			children = (
+				9B8B033125C2F07400F435DC /* TorchBridge */,
+				9B0178E525C2EA2E00903C7E /* model */,
+				9B0178D525C2407300903C7E /* mnist_digitApp.swift */,
+				9BCC096025CD7E22005D5877 /* AppSetup.swift */,
+				9BCC096925D406F4005D5877 /* PredictionService.swift */,
+				9BCC095D25CD663A005D5877 /* CameraService.swift */,
+				9BCC096325CD7F55005D5877 /* LandingPage.swift */,
+				9BCC097025D5596C005D5877 /* PredictionResultView.swift */,
+				9B0178D925C2407400903C7E /* Assets.xcassets */,
+				9B0178DE25C2407400903C7E /* Info.plist */,
+				9B0178DB25C2407400903C7E /* Preview Content */,
+			);
+			path = mnist_digit;
+			sourceTree = "<group>";
+		};
+		9B0178DB25C2407400903C7E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9B0178DC25C2407400903C7E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9B0178E525C2EA2E00903C7E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9B0178E725C2EA4E00903C7E /* torchscript_model_optimized.pt */,
+				9B0178E625C2EA4E00903C7E /* traced_script_module.pt */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9B8B033125C2F07400F435DC /* TorchBridge */ = {
+			isa = PBXGroup;
+			children = (
+				9B8B032725C2ED3600F435DC /* mnist_digit-Bridging-Header.h */,
+				9B8B033225C2F0B900F435DC /* MnistModule.h */,
+				9B8B033325C2F10500F435DC /* MnistModule.mm */,
+			);
+			path = TorchBridge;
+			sourceTree = "<group>";
+		};
+		ADB82410678D3F328C48DE4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B48B115051793D30D95F614D /* libPods-mnist_digit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B0178D125C2407300903C7E /* mnist_digit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B0178E125C2407400903C7E /* Build configuration list for PBXNativeTarget "mnist_digit" */;
+			buildPhases = (
+				98482273F27067AB69B7916C /* [CP] Check Pods Manifest.lock */,
+				9B0178CE25C2407300903C7E /* Sources */,
+				9B0178CF25C2407300903C7E /* Frameworks */,
+				9B0178D025C2407300903C7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mnist_digit;
+			productName = mnist_digit;
+			productReference = 9B0178D225C2407300903C7E /* mnist_digit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B0178CA25C2407300903C7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					9B0178D125C2407300903C7E = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
+				};
+			};
+			buildConfigurationList = 9B0178CD25C2407300903C7E /* Build configuration list for PBXProject "mnist_digit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B0178C925C2407300903C7E;
+			productRefGroup = 9B0178D325C2407300903C7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B0178D125C2407300903C7E /* mnist_digit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B0178D025C2407300903C7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0178DD25C2407400903C7E /* Preview Assets.xcassets in Resources */,
+				9B0178E925C2EA4E00903C7E /* torchscript_model_optimized.pt in Resources */,
+				9B0178E825C2EA4E00903C7E /* traced_script_module.pt in Resources */,
+				9B0178DA25C2407400903C7E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		98482273F27067AB69B7916C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mnist_digit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B0178CE25C2407300903C7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0178D625C2407300903C7E /* mnist_digitApp.swift in Sources */,
+				9B8B033425C2F10500F435DC /* MnistModule.mm in Sources */,
+				9BCC096A25D406F4005D5877 /* PredictionService.swift in Sources */,
+				9BCC095E25CD663A005D5877 /* CameraService.swift in Sources */,
+				9BCC096425CD7F55005D5877 /* LandingPage.swift in Sources */,
+				9BCC097125D5596C005D5877 /* PredictionResultView.swift in Sources */,
+				9BCC096125CD7E22005D5877 /* AppSetup.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9B0178DF25C2407400903C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B0178E025C2407400903C7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B0178E225C2407400903C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A23F0154DDBC5F1C916AAECF /* Pods-mnist_digit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"mnist_digit/Preview Content\"";
+				DEVELOPMENT_TEAM = PLGENHVBQL;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = mnist_digit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.mnist-digit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mnist_digit/TorchBridge/mnist_digit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B0178E325C2407400903C7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 730452992A7D59C6C80019DD /* Pods-mnist_digit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"mnist_digit/Preview Content\"";
+				DEVELOPMENT_TEAM = PLGENHVBQL;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = mnist_digit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.mnist-digit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mnist_digit/TorchBridge/mnist_digit-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B0178CD25C2407300903C7E /* Build configuration list for PBXProject "mnist_digit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B0178DF25C2407400903C7E /* Debug */,
+				9B0178E025C2407400903C7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B0178E125C2407400903C7E /* Build configuration list for PBXNativeTarget "mnist_digit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B0178E225C2407400903C7E /* Debug */,
+				9B0178E325C2407400903C7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B0178CA25C2407300903C7E /* Project object */;
+}
